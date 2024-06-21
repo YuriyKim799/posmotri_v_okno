@@ -36,3 +36,13 @@ ul,
 ol {
   list-style: none;
 }
+
+
+.content {
+  display: flex;
+  gap: 30px;
+}
+
+.search-form {
+  display: flex;
+}
