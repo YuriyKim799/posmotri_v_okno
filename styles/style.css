@@ -16,6 +16,9 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -39,13 +42,12 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+  inline-size: 1px;
+  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .content {
@@ -53,6 +55,7 @@ ol {
   align-items: flex-end;
   gap: 30px;
   max-width: 1140px;
+  margin: 0 auto;
 }
 
 .result__video-container {
