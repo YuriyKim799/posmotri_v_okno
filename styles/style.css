@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -16,9 +19,6 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 h1,
@@ -69,10 +69,10 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
@@ -91,9 +91,9 @@ ol {
 .search-form__label {
   position: relative;
   display: flex;
-  width: fit-content;
   align-items: center;
   gap: 5px;
+  width: fit-content;
 }
 
 .search-form__label:has(input:focus-visible) {
@@ -102,17 +102,18 @@ ol {
 }
 
 .search-form__label:has(input[type="checkbox"]):hover {
-  cursor: pointer;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__textfield {
+  appearance: none;
   min-width: 225px;
-  border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
   border-right: 1px solid transparent;
+  border-bottom: 1px solid #fff;
   border-left: 1px solid transparent;
-  padding: 2.5px 0px 2.5px 0px;
+  padding: 2.5px 0px;
   font-family: "Fira Sans Condensed", sans-serif;
   line-height: 21px;
   background-color: transparent;
@@ -120,15 +121,15 @@ ol {
 }
 
 .search-form__textfield:active {
-  outline: none;
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
+  outline: none;
 }
 
 .search-form__textfield:has(:focus-visible) {
-  outline: none;
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
+  outline: none;
 }
 
 .search-form__textfield:focus {
@@ -218,7 +219,7 @@ input[type="checkbox"]:active + span::before {
 }
 
 .title {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', 'sans-serif';
   font-size: 75px;
   line-height: 70.5px;
   text-transform: uppercase;
@@ -269,12 +270,16 @@ input[type="checkbox"]:active + span::before {
 }
 
 .content__video-card-title {
+  max-width: 200px;
   padding-bottom: 6px;
-  font-family: "Oswald";
+  font-family: 'Oswald', 'sans-serif';
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -293,8 +298,13 @@ input[type="checkbox"]:active + span::before {
   width: 100%;
 }
 
-.more-button:focus-visible {
+.more-button:focus {
   outline: none;
+}
+
+.more-button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .preloader-template {
