@@ -68,8 +68,7 @@ ol {
 }
 
 .visually-hidden {
-  /* position: absolute; */
-   /* position: absolute; */
+  position: absolute;
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
@@ -160,7 +159,7 @@ ol {
 
 input[type="checkbox"]:checked + span::before {
   content: "";
-  /* position: absolute; */
+  position: absolute;
   top: 1px;
   left: 1px;
   width: 15px;
@@ -170,7 +169,7 @@ input[type="checkbox"]:checked + span::before {
 
 input[type="checkbox"]:active + span::before {
   content: "";
-  /* position: absolute; */
+  position: absolute;
   top: 1px;
   left: 1px;
   width: 15px;
@@ -299,10 +298,10 @@ input[type="checkbox"]:active + span::before {
 }
 
 .preloader-template {
-  /* position: absolute; */
+  position: absolute;
   height: 100%;
 }
 
 .error-template {
-  /* position: absolute; */
+  position: absolute;
 }
