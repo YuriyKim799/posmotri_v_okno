@@ -40,14 +40,10 @@ ol {
   list-style: none;
 }
 
-
-
 .content {
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  max-width: 1140px;
-  margin: 0 auto;
 }
 
 .result__video-container {
