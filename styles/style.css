@@ -235,6 +235,8 @@ input[type="checkbox"]:active + span::before {
 .content__card-link {
   color: #fff;
   text-decoration: none;
+  display: block;
+  border: 1px solid transparent;
 }
 
 .content__list {
@@ -245,6 +247,14 @@ input[type="checkbox"]:active + span::before {
   overflow: auto;
 }
 
+.content__list-item {
+  border: 1px solid transparent;
+} 
+
+.content__list-item:hover {
+  text-decoration: underline;
+}
+
 .content__list-item:not(:last-child)   {
   margin-bottom: 30px;
 }
@@ -253,25 +263,20 @@ input[type="checkbox"]:active + span::before {
   background-color: #545050;
 }
 
-.content__list-item:focus-within {
+.content__card-link_current {
   background-color: #545050;
 }
 
-.content__list-item:hover {
-  text-decoration: underline;
-}
-
-.content__card-link {
-  display: block;
-  border: 1px solid transparent;
+.content__card-link:focus {
+  border: 1px solid #fff;
+  outline: none;
 }
 
 .content__card-link:focus-visible {
   border: 1px solid #fff;
   outline: none;
-  background-color: #1b1919;
 }
- 
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
