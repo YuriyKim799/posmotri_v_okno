@@ -268,10 +268,10 @@ input[type="checkbox"]:active + span::before {
 
 .content__card-link:focus-visible {
   border: 1px solid #fff;
-  background-color: #1b1919;
   outline: none;
+  background-color: #1b1919;
 }
-
+ 
 .content__video-card {
   display: flex;
   justify-content: space-between;
